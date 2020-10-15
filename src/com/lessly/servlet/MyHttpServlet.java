@@ -28,6 +28,7 @@ public class MyHttpServlet extends HttpServlet {
 	 */
 	public void init(ServletConfig config) throws ServletException {
 		// TODO Auto-generated method stub
+		System.out.println("@@ Servlet init()");
 		
 	}
 
@@ -36,6 +37,7 @@ public class MyHttpServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
+		response.setContentType("text/html");
 		System.out.println("in doGet() method...");
 		response.getWriter().append("Served at: ").append(request.getContextPath()); 
 	}
